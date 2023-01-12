@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,7 +25,6 @@
 		7D93E2A025AB203800F37364 /* TouchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93E29F25AB203800F37364 /* TouchButton.swift */; };
 		7D93E2A425AB244500F37364 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93E2A325AB244500F37364 /* EventMonitor.swift */; };
 		7DA946FD25AD32BB000B4816 /* deskcontroller.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 7DA946FC25AD32BB000B4816 /* deskcontroller.sdef */; };
-		7DA9470025AD3462000B4816 /* MoveDeskCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA946FF25AD3462000B4816 /* MoveDeskCommand.swift */; };
 		81293EBE25F24047007D3663 /* AutoStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81293EBD25F24047007D3663 /* AutoStand.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		7D93E29F25AB203800F37364 /* TouchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchButton.swift; sourceTree = "<group>"; };
 		7D93E2A325AB244500F37364 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		7DA946FC25AD32BB000B4816 /* deskcontroller.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = deskcontroller.sdef; sourceTree = "<group>"; };
-		7DA946FF25AD3462000B4816 /* MoveDeskCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDeskCommand.swift; sourceTree = "<group>"; };
 		7DA9470825AD8F9A000B4816 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7DA9470A25AD9C93000B4816 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		81293EBD25F24047007D3663 /* AutoStand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoStand.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				7DA946FC25AD32BB000B4816 /* deskcontroller.sdef */,
-				7DA946FF25AD3462000B4816 /* MoveDeskCommand.swift */,
 				6310F76E2849DAD100F3D9BB /* MoveDeskToHeightCommand.swift */,
 			);
 			path = "AppleScript Commands";
@@ -181,7 +178,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					7D93E28325AAB38B00F37364 = {
 						CreatedOnToolsVersion = 12.3;
@@ -226,6 +223,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		7D8B1CC625AC2DDD00ED1970 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -258,7 +256,6 @@
 				7D03619E25AC39B80051FB71 /* Preferences.swift in Sources */,
 				7D81872025ABE9FF0076DC19 /* BluetoothManager.swift in Sources */,
 				7D93E2A425AB244500F37364 /* EventMonitor.swift in Sources */,
-				7DA9470025AD3462000B4816 /* MoveDeskCommand.swift in Sources */,
 				7D93E29D25AB0BBB00F37364 /* DeskController.swift in Sources */,
 				7D93E28825AAB38B00F37364 /* AppDelegate.swift in Sources */,
 			);
@@ -312,6 +309,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -373,6 +371,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -403,7 +402,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 3P725D2V7A;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Desk Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,7 +427,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 3P725D2V7A;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VZ3Z8BPWPW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Desk Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
