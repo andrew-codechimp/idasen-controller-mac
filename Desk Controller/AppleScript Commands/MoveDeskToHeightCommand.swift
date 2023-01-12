@@ -30,10 +30,10 @@ class MoveDeskToHeightCommand: NSScriptCommand {
         case "up":
             DeskController.shared?.moveUp()
             break
-            
         case "down":
             DeskController.shared?.moveDown()
             break
+            
         default:
             if parameter.hasSuffix("cm") {
                 height = Float(parameter.dropLast(2))
