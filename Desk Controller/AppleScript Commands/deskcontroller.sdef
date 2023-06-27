@@ -3,13 +3,7 @@
 
 <dictionary title="Desk Controller">
     <suite name="Desk Controller Suite" code="MApN" description="Desk Controller Scripts">
-        <command name="hello" code="Akpstrng" description="Say Hello">
-            <cocoa class="Desk_Controller.HelloCommand"/>
-            <direct-parameter description="Greeting">
-                <type type="text"/>
-            </direct-parameter>
-        </command>
-        <command name="move" code="Bkpstrng" description="Move the connected Desk">
+        <command name="move" code="bkpstrng" description="Move the connected Desk">
             <cocoa class="Desk_Controller.MoveDeskCommand"/>
             <direct-parameter description="In what way to move">
                 <type type="text"/>
